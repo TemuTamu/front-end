@@ -1,0 +1,20 @@
+.VisitStepGroup{
+  height: 100vh;
+}
+
+.VisitRow{
+  padding: 4em 1em 0em 0em;
+}
+
+.VisitPersonProfile{
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+
+.VisitNextButton{
+  margin-top: 2em;
+}
+
+.VisitRightSideContainer{
+  padding-right: 3em !important;
+}
