@@ -76,6 +76,8 @@ class Stepone extends React.Component {
       </StyledGrid>
     )
   }
+
+
   render(){
     const { renderNextButton, renderPersonInChargeProfile, renderInputAutoSuggestion, renderbacktoHome  } = this;
     

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from 'semantic-ui-react';
+
+import CameraComponent from './Camera';
 import { StyledInput, StyledInputContainer, StyledInputRow, StyledDropDown } from './style';
 
 class Steptwo extends React.Component {
@@ -12,7 +14,6 @@ class Steptwo extends React.Component {
       { key: 3, text: 'Others', value: 3 },
     ]
   }
-
 
 
   render(){
@@ -41,6 +42,10 @@ class Steptwo extends React.Component {
               selection 
               />
           </StyledInputRow>
+          <StyledInputRow>
+          <CameraComponent />
+          </StyledInputRow>
+         
           <StyledInputRow>
           <Button onClick={() => handleNextButton()} basic color="black" content='Selanjutnya' fluid/>
           </StyledInputRow>

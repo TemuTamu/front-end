@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Dropdown } from 'semantic-ui-react';
+import { Dropdown, Modal } from 'semantic-ui-react';
 
 
 const StyledInputContainer = styled.div`
@@ -46,9 +46,19 @@ const StyledDropDown = styled(Dropdown)`
       
 `
 
+const StyledModalContent = styled(Modal)`
+   &&&{
+    .ui.modal > .content {  
+      padding: 0;
+      background: rgba(0,0,0,.85);
+    }
+   }
+
+`
 export {
   StyledInput,
   StyledInputRow,
   StyledInputContainer,
-  StyledDropDown
+  StyledDropDown,
+  StyledModalContent
 };
