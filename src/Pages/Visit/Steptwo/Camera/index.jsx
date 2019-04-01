@@ -3,6 +3,7 @@ import { Button, Modal, Grid } from 'semantic-ui-react';
 import Camera, { FACING_MODES, IMAGE_TYPES } from 'react-html5-camera-photo';
 import 'react-html5-camera-photo/build/css/index.css';
 
+import { StyledInputRow } from '../style'
 
 class CameraComponent extends React.Component {
 
@@ -43,9 +44,12 @@ class CameraComponent extends React.Component {
       />
         </Grid.Column>
         <Grid.Column width={8}>
-        <Button onClick={() => onRetakePhoto()} basic color="black" content='Re Take photo' fluid/>
-
-        <Button onClick={() => OpenCloseModal()} basic color="black" content='Done' fluid/>
+        <StyledInputRow>
+            <Button onClick={() => onRetakePhoto()} basic color="red" content='Re Take photo' fluid/>
+          </StyledInputRow>
+        <StyledInputRow>
+        <Button onClick={() => OpenCloseModal()} basic color="green" content='Done' fluid/>
+        </StyledInputRow>
         </Grid.Column>
       </Grid.Row>
       </Grid>
